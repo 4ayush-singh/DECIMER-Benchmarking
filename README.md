@@ -52,6 +52,7 @@ A GPU is optional for many workflows, although compatible hardware and dependenc
 11. Execute run_extraction.py file and evaluate_smiles.py files.
 
 NOTE:
+
 requirements.txt: the project's intended Python dependencies.
 
 requirements-lock.txt: the installed Python package versions captured after testing.
