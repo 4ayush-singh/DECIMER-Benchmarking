@@ -1,0 +1,84 @@
+{
+  "configuration": {
+    "predictions_csv": "output\\results.csv",
+    "ground_truth_csv": "ground_truth_SMILES_confirmed_1,2,4,6,16,19.csv",
+    "tanimoto_threshold": 0.5,
+    "morgan_radius": 2,
+    "morgan_fingerprint_size": 2048,
+    "paper_id_map": {}
+  },
+  "counts": {
+    "predicted_structures": 270,
+    "valid_predictions": 226,
+    "invalid_or_empty_predictions": 44,
+    "ground_truth_molecules": 222,
+    "valid_ground_truth_molecules": 222
+  },
+  "prediction_level_metrics": {
+    "validity_rate": 0.837,
+    "exact_string_match_rate_all_predictions": 0.0,
+    "canonical_match_rate_all_predictions": 0.2,
+    "inchikey_match_rate_all_predictions": 0.2074,
+    "tanimoto_threshold_match_rate_all_predictions": 0.3667,
+    "canonical_match_rate_valid_predictions": 0.2389,
+    "mean_best_tanimoto_valid_predictions": 0.4567
+  },
+  "ground_truth_coverage_metrics": {
+    "ground_truth_molecules_with_any_best_match": 106,
+    "coverage_rate_any_best_match": 0.4775,
+    "ground_truth_molecules_with_canonical_match": 51,
+    "canonical_ground_truth_coverage_rate": 0.2297,
+    "ground_truth_molecules_at_tanimoto_threshold": 82,
+    "tanimoto_ground_truth_coverage_rate": 0.3694
+  },
+  "per_paper": {
+    "1": {
+      "ground_truth_count": 17,
+      "canonical_matches": 13,
+      "canonical_coverage_rate": 0.7647,
+      "tanimoto_threshold_matches": 17,
+      "tanimoto_threshold_coverage_rate": 1.0
+    },
+    "16": {
+      "ground_truth_count": 4,
+      "canonical_matches": 1,
+      "canonical_coverage_rate": 0.25,
+      "tanimoto_threshold_matches": 2,
+      "tanimoto_threshold_coverage_rate": 0.5
+    },
+    "19": {
+      "ground_truth_count": 105,
+      "canonical_matches": 18,
+      "canonical_coverage_rate": 0.1714,
+      "tanimoto_threshold_matches": 24,
+      "tanimoto_threshold_coverage_rate": 0.2286
+    },
+    "2": {
+      "ground_truth_count": 34,
+      "canonical_matches": 9,
+      "canonical_coverage_rate": 0.2647,
+      "tanimoto_threshold_matches": 11,
+      "tanimoto_threshold_coverage_rate": 0.3235
+    },
+    "4": {
+      "ground_truth_count": 61,
+      "canonical_matches": 10,
+      "canonical_coverage_rate": 0.1639,
+      "tanimoto_threshold_matches": 27,
+      "tanimoto_threshold_coverage_rate": 0.4426
+    },
+    "6": {
+      "ground_truth_count": 1,
+      "canonical_matches": 0,
+      "canonical_coverage_rate": 0.0,
+      "tanimoto_threshold_matches": 1,
+      "tanimoto_threshold_coverage_rate": 1.0
+    }
+  },
+  "notes": [
+    "Each predicted structure is compared with its inferred paper's ground truth when possible; otherwise all ground-truth molecules are considered.",
+    "Best-match comparisons are not one-to-one: multiple predictions may select the same ground-truth molecule.",
+    "Tanimoto similarity is based on Morgan fingerprints and is not a probability of correctness.",
+    "Exact string match is stricter than canonical SMILES or InChIKey match."
+  ]
+}
