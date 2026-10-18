@@ -50,3 +50,10 @@ A GPU is optional for many workflows, although compatible hardware and dependenc
    If all checks succeed, the environment is ready for testing the PDF-processing workflow.
 
 11. Execute run_extraction.py file and evaluate_smiles.py files.
+
+NOTE:
+requirements.txt: the project's intended Python dependencies.
+
+requirements-lock.txt: the installed Python package versions captured after testing.
+
+environment.yml: the Conda environment specification, including Python and Conda-managed dependencies.
