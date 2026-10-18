@@ -2,13 +2,21 @@
 Conda python environment repository for benchmarking DECIMER for molecule to SMILES conversion from research paper pdfs.
 
 Requirements:
+
 Conda or Miniconda.
+
 Python 3.10.
+
 DECIMER Image Transformer.
+
 DECIMER-Segmentation.
+
 Poppler for PDF processing, as required by the segmentation workflow.
+
 Sufficient RAM and disk space for processing PDF files and neural-network models.
+
 An internet connection during initial installation and model downloads.
+
 A GPU is optional for many workflows, although compatible hardware and dependencies can improve processing speed.
 
 1. Clone the repository
