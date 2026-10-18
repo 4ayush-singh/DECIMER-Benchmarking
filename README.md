@@ -1,4 +1,4 @@
-# DECIMER-Benchmarking
+s# DECIMER-Benchmarking
 Conda python environment repository for benchmarking DECIMER for molecule to SMILES conversion from research paper pdfs.
 
 Requirements:
@@ -27,9 +27,9 @@ A GPU is optional for many workflows, although compatible hardware and dependenc
 
 3. Create and activate the Conda environment
 
-   conda create -n decimer-pdf python=3.10 pip -y
+   conda create -n decimer-papers python=3.10 pip -y
 
-   conda activate decimer-pdf
+   conda activate decimer-papers
 
 5. Install system dependencies
 
