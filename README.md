@@ -66,3 +66,5 @@ requirements.txt: the project's intended Python dependencies.
 requirements-lock.txt: the installed Python package versions captured after testing.
 
 environment.yml: the Conda environment specification, including Python and Conda-managed dependencies.
+
+Run test_decimer.py file in testing folder to check if Decimer's running or not.
